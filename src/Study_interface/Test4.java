@@ -15,7 +15,7 @@ public class Test4 {
 }
 
 enum Orientation{
-    EAST,SOUTH,WEST,NORTH;
+    EAST,SOUTH,WEST,NORTH
 }
 
 class Car{
