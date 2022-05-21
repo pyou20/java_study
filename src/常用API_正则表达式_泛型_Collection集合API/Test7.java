@@ -173,7 +173,9 @@ class Guest{
 
     public static void settlement(ArrayList<Goods> list) {
         System.out.println("------------------------------------------");
-        if(list.isEmpty()) System.out.println("购物车为空，请添加商品！");
+        if(list.isEmpty()) {
+            System.out.println("购物车为空，请添加商品！");
+        }else {
         System.out.println("商品id\t商品名称\t商品单价\t计价单位\t数量\t金额");
         for (Goods goods:list
         ) {
@@ -184,6 +186,6 @@ class Guest{
                     +goods.getNum()+"\t"
                     +goods.getPrice()*goods.getNum());
         }
-        System.out.println("------------------------------------------");
+        System.out.println("------------------------------------------");}
     }
 }
